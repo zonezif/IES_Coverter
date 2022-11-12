@@ -281,7 +281,14 @@ def convert(arq):
 key = 's'
 
 while (key == 's'):
-    os.chdir(input("arraste a pasta aqui!!"))
+    dire = input("arraste a pasta aqui!!").replace('\"', '')
+    dire = dire.replace('\'', '')
+    dire = dire.replace('&', '')
+    if (dire[0] == " "):
+        dire = dire[1:]
+    print(dire)
+    os.chdir(dire)
+
     page = os.getcwd()
     lista = os.listdir(page)
     IESs = []

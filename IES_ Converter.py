@@ -281,7 +281,8 @@ def convert(arq):
 key = 's'
 
 while (key == 's'):
-    dire = input("arraste a pasta aqui!!").replace('\"', '')
+    dire = input("\nArraste a pasta aqui!!").replace('\"', '')
+    os.system('cls')
     dire = dire.replace('\'', '')
     dire = dire.replace('&', '')
     if (dire[0] == " "):
@@ -312,4 +313,3 @@ while (key == 's'):
         u += 1
 
     print('\n', u, 'Arquivos convertidos')
-    key = input("Digite s para continuar")

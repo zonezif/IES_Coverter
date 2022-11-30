@@ -301,6 +301,9 @@ while (key == 's'):
             if arq[1] == 'ies':
                 if (arq[0].count('IES_') != 1):
                     IESs.append(i)
+            if arq[1] == 'IES':
+                if (arq[0].count('IES_') != 1):
+                    IESs.append(i)
 
     if (os.path.exists('out') != 1):
         os.makedirs(page+'//out')

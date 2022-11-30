@@ -230,7 +230,7 @@ class IES(object):
 
 def convert(arq):
 
-    print('convertendo...> ' + arq + ' >>>'+'IES_' + arq)
+    print('convertendo...> ' + arq + ' >>>' + arq)
 
     ies1 = IES(arq)
 
@@ -243,7 +243,7 @@ def convert(arq):
     ah = ies1.AngH()
     # print(dd1[0][int(ies1.Nang())-1])
 
-    arquivo = open('./out/'+'IES_'+arq, 'w', encoding='utf-8')
+    arquivo = open('./out/'+arq, 'w', encoding='utf-8')
     m = 0
     arquivo.write('IESNA:LM-63-2002\n')
 
